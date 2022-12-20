@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to left, #529efc, #f472b6);
+}
+
+.hdrDivider {
+  position: relative;
+  z-index: 1;
+  border-bottom-right-radius: 10%;
+}
+
+.hdrDivider::before {
+  content: '';
+  z-index: 2;
+  position: absolute;
+  height: 50%;
+  width: 5px;
+  top: 55%;
+  background: #f472b6;
+  border-top-left-radius: 100%;
+}
+
+.heroCont {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  align-items: start;
+  height: 40em;
+  width: 100%;
+  background: white;
+  margin-top: 1em;
+  gap: 10em;
+}
+
+.heroCont button {
+  margin-top: 1em;
+  padding: 2em 10em;
+}
+
+.heroCont .voteBoy:active {
+  background: #1a3f6d;
+}
+
+.heroCont .voteGirl:active {
+  background: #961c5b;
+}
+
+.display {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  gap: 10em;
+}
+
+.percentDisplay {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+}

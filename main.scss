@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+@mixin DG($disp, $gtc, $gtr, $jc, $ai, $h, $w) {
+    display: $disp; grid-template-columns: repeat($gtc, auto); grid-template-rows: repeat($gtr, auto); justify-content: $jc; align-items: $ai; height: $h; width: $w;
+}
+
+body {
+    background: linear-gradient(to left, rgb(82, 158, 252),  rgb(244, 114, 182))
+}
+
+.hdrDivider {
+    position: relative; 
+    z-index: 1; 
+    border-bottom-right-radius: 10%;
+    &::before {
+        content: ''; 
+        z-index: 2; 
+        position: absolute; 
+        height: 50%; 
+        width: 5px; 
+        top: 55%; 
+        background: rgb(244, 114, 182); 
+        border-top-left-radius: 100%;
+    }
+}
+
+.heroCont {
+   @include DG(grid, 1, 3,  center, start, 40em, 100%); 
+   background: white; 
+   margin-top: 1em;
+   gap: 10em; 
+   button {
+    margin-top: 1em;
+    padding: 2em 10em
+   }
+   .voteBoy {
+    &:active {
+        background: rgb(26, 63, 109)
+    }
+   }
+   .voteGirl {
+    &:active {
+        background: rgb(150, 28, 91)
+    }
+   }
+}
+.display {
+    @include DG(grid, 2, 1, center, center, 20%, 100%); 
+    gap: 10em
+}
+.percentDisplay {
+    @include DG(grid, 2, 1, center, center, 20%, 100%)
+}

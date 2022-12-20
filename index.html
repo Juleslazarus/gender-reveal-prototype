@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgan & Julian's First!</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="grid justify-center mt-5"> 
+        <div class="hdrCont w-full flex justify-center items-center gap-5 bg-white p-3 rounded-md "> 
+            <h1 class="text-blue-400 text-3xl font-bold text-center">What Will</h1>
+            <div class="hdrDivider h-[100%] w-[5px] bg-blue-400"></div>
+            <h1 class="text-pink-400 text-3xl font-bold text-center">They Be?</h1>
+        </div>
+    </div>
+    <div class="grid justify-center"> 
+        <p class="text-center text-2xl text-blue-400 p-2 bg-white rounded-md mt-5">Cast Your <b class="font-normal text-pink-400">Vote Below</b></p>
+    </div>
+    <div class="heroCont">
+        <div class="display">
+            <p class="boyTally text-2xl text-black">Number Of Votes For Boy: <span class="BCount bg-gray-300 p-.5 rounded-sm text-blue-400"></span></p>
+            <p class="girlTally text-2xl text-black">Number Of Votes For Girl: <span class="GCount bg-gray-300 p-.5 rounded-sm text-pink-400"></span></p>
+        </div>
+        
+        <div class="voteBtnCotn">   
+            <button class="voteBoy p-2 rounded-md bg-blue-400 text-white">Boy</button>
+            <button class="voteGirl p-2 rounded-md bg-pink-400 text-white">Girl</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
